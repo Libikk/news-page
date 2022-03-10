@@ -39,11 +39,14 @@ return (
                     isCurrentTab(country)
                         ? 'border-indigo-500 text-indigo-600'
                         : 'border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-200',
-                    'whitespace-nowrap flex py-4 px-1 border-b-2 font-medium text-sm'
+                    'whitespace-nowrap flex py-4 px-1 border-b-2 font-medium text-sm items-center'
                     )}
                     onClick={() => setCurrentTab(country)}
                 >
                     {country.label}
+                    <div>
+                        <img src={`https://flagcdn.com/16x12/${country.countryCode}.png`} className="ml-1 mt-px" width="16" height="12" alt={country.label} />
+                    </div>
                 </button>
                 ))}
             </nav>
