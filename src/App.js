@@ -1,5 +1,6 @@
 import { useEffect } from 'react';
 import { NewsService } from './api/newsService';
+import NewsCategoryFilters from './components/NewsCategoryFilters';
 import './index.css';
 
 
@@ -17,6 +18,7 @@ const App = () => {
         <div className="flex justify-between pb-6">
           <h1 className='text-4xl font-extrabold text-gray-900'>Lorem Ipsum News</h1>
         </div>
+        <NewsCategoryFilters />
       </main>
     </div>
   );
