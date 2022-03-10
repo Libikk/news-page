@@ -42,6 +42,7 @@ return (
                     'whitespace-nowrap flex py-4 px-1 border-b-2 font-medium text-sm items-center'
                     )}
                     onClick={() => setCurrentTab(country)}
+                    aria-current={setCurrentTab(country) ? 'page' : undefined}
                 >
                     {country.label}
                     <div>
