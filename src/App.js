@@ -12,8 +12,12 @@ const App = () => {
     getTopHeadlines();
   }, [])
   return (
-    <div className="App">
-      123
+    <div className='w-full flex justify-center'>
+      <main className="max-w-screen-lg w-full p-2 pt-6 sm:px-10">
+        <div className="flex justify-between pb-6">
+          <h1 className='text-4xl font-extrabold text-gray-900'>Lorem Ipsum News</h1>
+        </div>
+      </main>
     </div>
   );
 }
