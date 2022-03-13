@@ -1,6 +1,7 @@
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import { NewsService } from './api/newsService';
 import NewsCategoryFilters from './components/NewsCategoryFilters';
+import TopHeadlines from './components/TopHeadlines';
 import './index.css';
 
 
@@ -32,6 +33,7 @@ const App = () => {
           <h1 className='text-4xl font-extrabold text-gray-900'>Lorem Ipsum News</h1>
         </div>
         <NewsCategoryFilters countries={countries} currentTab={currentTab} setCurrentTab={setCurrentTab} />
+        <TopHeadlines topHeadlines={topHeadlines} />
       </main>
     </div>
   );
