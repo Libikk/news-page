@@ -3,16 +3,7 @@ import { useState } from 'react'
 const classNames = (...classes) => classes.filter(Boolean).join(' ')
 
 
-const NewsCategoryFilters = () => {
-    const countries = [
-        { countryCode: 'us', label: 'US' },
-        { countryCode: 'gb', label: 'UK' },
-        { countryCode: 'fr', label: 'France' },
-        { countryCode: 'au', label: 'Australia' },
-        { countryCode: 'in', label: 'India' },
-    ]
-    const [firstInitialTab] = countries;
-    const [currentTab, setCurrentTab] = useState(firstInitialTab)
+const NewsCategoryFilters = ({ countries, currentTab, setCurrentTab }) => {
     const isCurrentTab = (tab) => currentTab.countryCode === tab.countryCode;
 
 return (
