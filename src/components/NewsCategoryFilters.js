@@ -1,7 +1,4 @@
-import { useState } from 'react'
-
 const classNames = (...classes) => classes.filter(Boolean).join(' ')
-
 
 const NewsCategoryFilters = ({ countries, currentTab, setCurrentTab }) => {
     const isCurrentTab = (tab) => currentTab.countryCode === tab.countryCode;
