@@ -28,12 +28,19 @@ const App = () => {
 
   return (
     <div className='w-full flex justify-center'>
-      <main className="max-w-screen-xl w-full p-2 pt-6 sm:px-10">
-        <div className="flex justify-between pb-6">
+      <main className="w-full pt-6 flex justify-center flex-col items-center">
+        <div className="max-w-screen-xl flex justify-between pb-6 p-2 sm:px-10">
           <h1 className='text-4xl font-extrabold text-gray-900'>Lorem Ipsum News</h1>
         </div>
-        <NewsCategoryFilters countries={countries} currentTab={currentTab} setCurrentTab={setCurrentTab} />
-        <TopHeadlines topHeadlines={topHeadlines} />
+
+        <section className='max-w-screen-xl p-2 sm:px-10'>
+          <NewsCategoryFilters countries={countries} currentTab={currentTab} setCurrentTab={setCurrentTab} />
+        </section>
+        <section className='border-t border-gray-300 bg-gray-100 w-full flex justify-center p-2 sm:px-10'>
+          <div className='max-w-screen-xl'>
+            <TopHeadlines topHeadlines={topHeadlines}  />
+          </div>
+        </section>
       </main>
     </div>
   );

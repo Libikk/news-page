@@ -21,7 +21,6 @@ return (
             </select>
         </div>
         <div className="hidden sm:block">
-            <div className="border-b border-gray-200">
             <nav className="-mb-px flex space-x-8" aria-label="Tabs">
                 {countries.map((country) => (
                 <button
@@ -42,7 +41,6 @@ return (
                 </button>
                 ))}
             </nav>
-            </div>
         </div>
     </div>)
 }
